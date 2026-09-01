@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautiful animated Celsius, Fahrenheit and Kelvin temperature converter.">
+  <title>ThermoShift — Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="brand-mark" aria-hidden="true"><span>°</span></div>
+      <div>
+        <p class="eyebrow">THERMOSHIFT · TASK 3</p>
+        <h1>Turn up the <span>temperature.</span></h1>
+        <p class="subtitle">Instantly translate temperatures across Celsius, Fahrenheit and Kelvin.</p>
+      </div>
+    </header>
+
+    <section class="converter-card" aria-label="Temperature converter">
+      <form id="converterForm" novalidate>
+        <div class="input-grid">
+          <div class="field">
+            <label for="temperature">Temperature</label>
+            <div class="input-wrap">
+              <input id="temperature" name="temperature" type="number" inputmode="decimal"
+                     step="any" placeholder="e.g. 25" autocomplete="off" aria-describedby="inputError">
+              <span class="input-suffix" id="inputSuffix">°C</span>
+            </div>
+            <p class="error" id="inputError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="unit">Input unit</label>
+            <div class="select-wrap">
+              <select id="unit" name="unit" aria-label="Input temperature unit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button class="convert-btn" type="submit">
+          <span>Convert temperature</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <div class="status" id="status" aria-live="polite">
+        <span class="status-dot"></span>
+        <span>Ready for a temperature</span>
+      </div>
+
+      <section class="results" aria-live="polite" aria-label="Conversion results">
+        <article class="result-card celsius">
+          <div class="result-top"><span class="unit-icon">°C</span><span class="result-label">Celsius</span></div>
+          <strong id="celsiusResult">—</strong>
+          <small>Celsius</small>
+        </article>
+        <article class="result-card fahrenheit">
+          <div class="result-top"><span class="unit-icon">°F</span><span class="result-label">Fahrenheit</span></div>
+          <strong id="fahrenheitResult">—</strong>
+          <small>Fahrenheit</small>
+        </article>
+        <article class="result-card kelvin">
+          <div class="result-top"><span class="unit-icon">K</span><span class="result-label">Kelvin</span></div>
+          <strong id="kelvinResult">—</strong>
+          <small>Kelvin</small>
+        </article>
+      </section>
+
+      <footer class="tip">
+        <span class="tip-icon">✦</span>
+        <p><b>Absolute zero:</b> temperatures below −273.15°C are not physically valid.</p>
+      </footer>
+    </section>
+
+    <p class="footer-note">Vanilla HTML · CSS · JavaScript <span>•</span> Built for the web</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
