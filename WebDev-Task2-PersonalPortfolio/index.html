@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sakshi Mule — Frontend Developer</title>
+<meta name="description" content="Sakshi Vikas Mule — Web Developer portfolio. Projects, skills, education and experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="cursor-dot"></div>
+<div class="progress"><span></span></div>
+
+<header class="topbar">
+  <a class="brand" href="#home">SAKSHI<span>.</span></a>
+  <nav>
+    <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="voice-pill" id="voiceBtn" aria-label="Play introduction"><i></i><span>Play intro</span></button>
+</header>
+
+<main>
+<section class="scene hero" id="home">
+  <div class="chapter">01 <span>INTRODUCTION</span></div>
+  <div class="hero-copy">
+    <p class="eyebrow">WEB DEVELOPER · PUNE, INDIA</p>
+    <h1>I build <em>digital experiences</em><br>that feel alive.</h1>
+    <p class="lede">Hi, I'm Sakshi Vikas Mule — a fresher focused on frontend development, interaction and learning by building.</p>
+    <div class="hero-actions"><a class="primary" href="#work">Explore my work <b>↘</b></a><button class="secondary" id="talkBtn">Hear Sakshi <b>◉</b></button></div>
+    <div class="scrollhint"><span></span>Scroll to enter</div>
+  </div>
+  <div class="portrait-stage" id="portraitStage">
+    <div class="halo h1"></div><div class="halo h2"></div><div class="halo h3"></div>
+    <div class="orb orb-a"></div><div class="orb orb-b"></div>
+    <div class="portrait-shadow"></div>
+    <img src="assets/sakshi.png" class="portrait" alt="Sakshi Vikas Mule">
+    <div class="identity-tag"><small>01 / 06</small><strong>Sakshi<br>Vikas Mule</strong><span>Frontend · UI · Web</span></div>
+  </div>
+  <div class="hero-side"><span>SCROLL</span><div class="line"></div><span>2026</span></div>
+  <div class="floor"></div>
+</section>
+
+<section class="scene about" id="about">
+  <div class="chapter">02 <span>PROFILE</span></div>
+  <div class="section-intro"><p class="eyebrow">A little context</p><h2>Curious by default.<br><em>Builder by choice.</em></h2><p>I'm a Computer Science graduate and a fresher looking for opportunities where I can turn ideas into clean, useful web experiences.</p><button class="textvoice" data-say="I am Sakshi Vikas Mule, a fresher web developer from Pune. I completed my B.Sc. in Computer Science and I learn by building real projects, experimenting with interfaces and improving one step at a time.">▶ Listen to this section</button></div>
+  <div class="about-card card3d"><span class="card-no">PROFILE / 2026</span><div class="bigquote">“</div><p>I like interfaces that don't just work — they have a point of view.</p><div class="mini-row"><span>FRESHER</span><span>OPEN TO OPPORTUNITIES</span></div></div>
+  <div class="floating-type">HTML<br>CSS<br>JS</div>
+</section>
+
+<section class="scene work" id="work">
+  <div class="chapter">03 <span>SELECTED WORK</span></div>
+  <div class="work-head"><div><p class="eyebrow">Selected builds</p><h2>Work that moves<br><em>with the idea.</em></h2></div><p class="work-note">Drag the project dial.<br>Each build opens in a new tab.</p></div>
+  <div class="project-orbit" id="projectOrbit">
+    <div class="project-ring"></div><div class="project-glow"></div>
+    <article class="project-card active" data-project="0"><div class="project-art solar"><div class="sun"></div><i class="planet p1"></i><i class="planet p2"></i><i class="planet p3"></i><i class="planet p4"></i><span>LIVE / 3D</span></div><div class="project-meta"><small>01 — INTERACTIVE</small><h3>3D Solar System</h3><p>Interactive planetary model built with HTML, CSS animation and JavaScript.</p><a href="https://saku-front.github.io/Solar-System/" target="_blank" rel="noreferrer">Open project ↗</a></div></article>
+    <article class="project-card" data-project="1"><div class="project-art ai"><div class="ai-core"></div><div class="ai-wave w1"></div><div class="ai-wave w2"></div><span>AI / VIDEO</span></div><div class="project-meta"><small>02 — CREATIVE WEB</small><h3>Luma AI</h3><p>A visual AI/video exploration presented as an interactive web experience.</p><a href="https://lumalabs.ai/" target="_blank" rel="noreferrer">Explore Luma ↗</a></div></article>
+    <article class="project-card" data-project="2"><div class="project-art shop"><div class="shop-window"><b>amazon</b><span>SEARCH · SHOP · DISCOVER</span></div><span>WEB / E-COMMERCE</span></div><div class="project-meta"><small>03 — FRONTEND</small><h3>Amazon Clone</h3><p>Responsive e-commerce interface with search, categories and product-focused layouts.</p><a href="https://saku-front.github.io/amazon/" target="_blank" rel="noreferrer">Open project ↗</a></div></article>
+    <article class="project-card" data-project="3"><div class="project-art assistant"><div class="assistant-core">AI</div><div class="voice-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>VOICE ENABLED</span></div><div class="project-meta"><small>04 — INTERACTION</small><h3>Virtual AI Assistant</h3><p>Voice-enabled assistant interface with an interactive conversational UI.</p><a href="https://saku-front.github.io/Virtual-AI/" target="_blank" rel="noreferrer">Open project ↗</a></div></article>
+  </div>
+  <div class="project-nav"><button id="prev">←</button><div id="projectLabel">01 / 04</div><button id="next">→</button></div>
+</section>
+
+<section class="scene skills" id="skills">
+  <div class="chapter">04 <span>CAPABILITIES</span></div>
+  <div class="skills-copy"><p class="eyebrow">Tools I use</p><h2>Simple stack.<br><em>Strong fundamentals.</em></h2><p>My focus is frontend development and responsive, accessible interfaces.</p></div>
+  <div class="skill-stage" id="skillStage">
+    <div class="skill-core">BUILD<br><span>WITH INTENT</span></div>
+    <div class="skill-pill s1">HTML5</div><div class="skill-pill s2">CSS3</div><div class="skill-pill s3">JavaScript</div><div class="skill-pill s4">Responsive Design</div><div class="skill-pill s5">Git & GitHub</div><div class="skill-pill s6">UI / UX Basics</div><div class="skill-pill s7">VS Code</div><div class="skill-pill s8">Problem Solving</div>
+  </div>
+</section>
+
+<section class="scene education" id="education">
+  <div class="chapter">05 <span>EDUCATION</span></div>
+  <div class="edu-left"><p class="eyebrow">Academic timeline</p><h2>From fundamentals<br>to <em>building.</em></h2><p>B.Sc. Computer Science · 2022–2025</p></div>
+  <div class="timeline">
+    <article><span>2022 — 2025</span><div><h3>B.Sc. Computer Science</h3><p>College of Arts, Commerce & Computer Education</p><p>Savitribai Phule Pune University</p><b>8.00 CGPA</b></div></article>
+    <article><span>2022</span><div><h3>HSC · 12th</h3><p>Shardabai Pawar Mahila Mahavidyalaya, Shardanagar</p><p>Maharashtra State Board</p><b>51.00%</b></div></article>
+    <article><span>2020</span><div><h3>SSC · 10th</h3><p>M.E.S Highschool, Baramati</p><p>Maharashtra State Board</p><b>82.80%</b></div></article>
+  </div>
+</section>
+
+<section class="scene contact" id="contact">
+  <div class="chapter">06 <span>LET'S CONNECT</span></div>
+  <div class="contact-copy"><p class="eyebrow">Open to opportunities</p><h2>Let's make something<br><em>worth scrolling for.</em></h2><p>Fresher · Online internships · Self-study · Frontend development</p><a class="mail" href="mailto:sakshimule808@gmail.com">sakshimule808@gmail.com ↗</a></div>
+  <div class="contact-links"><a href="https://github.com/Saku-front" target="_blank" rel="noreferrer"><span>GitHub</span><b>↗</b></a><a href="https://www.linkedin.com/in/sakshi-mule-a608a0402/" target="_blank" rel="noreferrer"><span>LinkedIn</span><b>↗</b></a><a href="mailto:sakshimule808@gmail.com"><span>Email</span><b>↗</b></a></div>
+  <footer><span>SAKSHI MULE</span><span>© 2026 · BUILT WITH HTML / CSS / JS</span></footer>
+</section>
+</main>
+<div class="voice-caption" id="voiceCaption"><span class="pulse"></span><span id="captionText">Sakshi is presenting</span></div>
+<script src="script.js"></script>
+</body></html>
